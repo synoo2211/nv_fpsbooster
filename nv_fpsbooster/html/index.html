@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV FPS Booster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app" style="display: none;">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <!-- Background Decorations -->
+            <div class="cyber-corner-tl"></div>
+            <div class="cyber-corner-br"></div>
+            <div class="scan-line-deco"></div>
+
+            <!-- Header -->
+            <header class="header">
+                <div class="logo-area">
+                    <img src="assets/logo.png" alt="NV_LOGO" class="logo-img">
+                    <div class="title-wrap">
+                        <h1>NV_FPSBOOSTER</h1>
+                        <p>PERFORMANCE OPTIMIZATION SYSTEM</p>
+                    </div>
+                </div>
+                <button id="close-btn" class="close-btn"><i class="fas fa-times"></i></button>
+            </header>
+
+            <!-- Main Content -->
+            <main class="content">
+                <section class="config-section">
+                    <h2 class="section-title"><i class="fas fa-tachometer-alt"></i> BOOST LEVEL</h2>
+                    <div class="level-grid">
+                        <div class="level-card" data-level="Off">
+                            <div class="card-icon"><i class="fas fa-power-off"></i></div>
+                            <div class="card-info">
+                                <h3>OFF</h3>
+                                <p>Default Game Settings</p>
+                            </div>
+                        </div>
+                        <div class="level-card" data-level="Lite">
+                            <div class="card-icon"><i class="fas fa-feather"></i></div>
+                            <div class="card-info">
+                                <h3>LITE</h3>
+                                <p>Minor Performance Tweaks</p>
+                            </div>
+                        </div>
+                        <div class="level-card" data-level="Medium">
+                            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="card-info">
+                                <h3>MEDIUM</h3>
+                                <p>Balanced Visuals & FPS</p>
+                            </div>
+                        </div>
+                        <div class="level-card" data-level="High">
+                            <div class="card-icon"><i class="fas fa-fire"></i></div>
+                            <div class="card-info">
+                                <h3>HIGH</h3>
+                                <p>Maximum FPS Optimization</p>
+                            </div>
+                        </div>
+                        <div class="level-card" data-level="Ultra">
+                            <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="card-info">
+                                <h3>ULTRA</h3>
+                                <p>Extreme Performance Mode</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="toggle-section">
+                    <div class="smooth-toggle-wrap">
+                        <div class="toggle-info">
+                            <h2><i class="fas fa-magic"></i> SPECIAL NV BOOST <span
+                                    class="pill-badge">RECOMMENDED</span></h2>
+                            <p>Activate the ultimate performance & cinematic enhancement engine.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="smooth-mode">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="tools-section">
+                    <h2 class="section-title"><i class="fas fa-tools"></i> ADVANCED TOOLS</h2>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-info">
+                                <h3>NIGHT PERFORMANCE</h3>
+                                <p>Disable city lights for better FPS at night.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="lights-mode">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-info">
+                                <h3>MEMORY CLEANER</h3>
+                                <p>Free up Lua garbage & system cache.</p>
+                            </div>
+                            <button id="clean-memory-btn" class="action-btn">CLEAN</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer Stats -->
+            <footer class="footer">
+                <div class="stat-item">
+                    <span class="stat-label">STATUS:</span>
+                    <span id="status-text" class="stat-value text-cyan">SYSTEM ACTIVE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">MODE:</span>
+                    <span id="current-mode-text" class="stat-value text-cyan">DEFAULT</span>
+                </div>
+                <div class="version-tag">NVCORE V1.0</div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
