@@ -75,4 +75,4 @@ This script is provided as a free resource but is **not** open source. Unauthori
 ## 🤝 Support
 
 Join our community for updates and support:
-[Discord Link / Website Link Here]
+https://nvcorestore.netlify.app/
